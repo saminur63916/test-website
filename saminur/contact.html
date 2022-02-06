@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=10">
+    <title>test website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fas fa-window-close"></i>
+                      <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTANT</a></li>
+                      </ul>  
+                </div>
+                <i class="fa fa-bars" onclick="showMenu"></i>
+            </nav>
+            <h1>contact us</h1>
+    </section>
+
+
+<!----contact us--->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.856070380895!2d90.43196751486819!3d23.752511434588314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8119f5ec64b%3A0x4cfc886964f5dc47!2sGoran%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1644148658988!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact us">
+
+<div class="row">
+    <div class="contact-col">
+        <div>
+            <i class="fab fa-home"></i>
+            <span>
+                <h5>XYZ Road, ABC Building</h5>
+                <p>Goran,Dhaka,Bangladesh</p>
+            </span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="contact-col">
+        <div>
+            <i class="fab fa-phone"></i>
+            <span>
+                <h5>+0080272727272727</h5>
+                <p>monday to saturday, 10AM to 5PM</p>
+            </span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="contact-col">
+        <div>
+            <i class="fab fa-envelope-o"></i>
+            <span>
+                <h5>info@idijijsixisxij.com</h5>
+                <p>email us your query</p>
+            </span>
+        </div>
+    </div>
+    <div class="contact-col"></div>
+
+        <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="enter your name" required>
+            <input type="email" name="email" placeholder="enter your email" required>
+            <input type="text" name="subject" placeholder="enter your subject" required>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="message" required></textarea>
+            <button type= "submit" class="hero-btn red-btn">send message</button>
+        </form>
+
+</div>
+
+</section>
+
+
+<!-----footer----->
+
+<section class="footer">
+    <h4>about us</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry.
+            Lorem Ipsury's standard dummy text ese</p>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+           
+</section>
+
+
+<!--------Javascript For Toggle Menu-------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+
+</body>
+</html>
